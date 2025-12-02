@@ -5,14 +5,14 @@
     font-family: "Poppins", sans-serif;
 }
 body {
-    background: #f5f5f5;
+    background: #1e1e1e;
     color: #222;
 }
 /* Navbar */
 header{
     width: 100%;
     padding: 20px 40px;
-    background: #fff;
+    background: #222;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: fixed;
     top: 0;
@@ -24,6 +24,7 @@ nav{
     align-items: center;
 }
 .logo{
+    color: #fff;
     font-size: 26px;
     font-weight: 700;
 }
@@ -40,7 +41,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     font-style: 18px;
-    color: #222;
+    color: #fff;
     transition: 0.3s;
 }
 nav ul li a:hover {
@@ -53,17 +54,45 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #ff5722, #ff784e);
-    color: #fff;
+    /* background: linear-gradient(to right, #ff5722, #ff784e); */
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://plus.unsplash.com/premium_photo-1663100722417-6e36673fe0ed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+        no-repeat center center/cover;
+    color: #0c0c0c;
     padding-top: 80px;
 }
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: rgba(0,0,0,0.25);
+    z-index: 1;
+}
 .hero-text{
+    width: 70%;
+    font-weight: 500;
+    font-size: 18px;
     text-align: center;
+    /* Soft Glassmorphism */
+    background: rgba(44, 44, 44, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+    padding: 50px 70px;
+    border-radius: 25px;
+    backdrop-filter: blur(18px); /* Higher blur for depth */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
 }
 .hero-text h1{
     font-size: 50px;       /* fixed: font-style → font-size */
     line-height: 1.2;
     padding: 0 10px;
+    color: #fff;
+    font-weight: 700;
 }
 .hero-text span{
     color: yellow;
@@ -71,16 +100,20 @@ nav ul li a:hover {
 .hero-text p{
     font-style: 20px;
     margin: 15px 0;
+    color: #fff;
 }
 .btn{
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 15px 35px;
     padding: 10px 25px;
     background: #222;
-    color: #fff;
+    color: #00bcd4;
     text-decoration: none;
-    border-radius: 6px;
-    transition: 0.3s;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 8px 8px 15px var(--shadow-dark), -8px -8px 15px var(--shadow-light);
 }
 .btn:hover {
     background: #000;
@@ -96,6 +129,7 @@ nav ul li a:hover {
 .about{
     padding: 40px 100px;
     text-align: center;
+    color: #a0a0a0;
 }
 
 /* Project Card */
@@ -108,13 +142,23 @@ nav ul li a:hover {
     gap: 20px;
 }
 .project-card {
-    background: #fff;
+    background: #2c2c2c;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: 0.3s;
     justify-content: center;
     text-align: center;
+}
+.project-card h3{
+    color: #00bcd4;
+}
+.project-card p{
+    color: #a0a0a0;
+}
+.project-card a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .project-card:hover {
@@ -133,6 +177,9 @@ nav ul li a:hover {
     color: #df643f;
     text-decoration: none;
     font-weight: 600;
+}
+.contact p{
+    color: #a0a0a0;
 }
 
 .contact a:hover {
