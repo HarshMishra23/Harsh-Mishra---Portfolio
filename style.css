@@ -178,6 +178,59 @@ nav ul li a:hover {
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
+/* Certificates Section */
+.certificates {
+    padding: 40px 100px;
+    text-align: center;
+    height: auto;
+}
+
+.certificate-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.certificate-card {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 15px;
+    width: 360px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.certificate-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.certificate-card h3 {
+    color: #00bcd4;
+    margin-bottom: 8px;
+}
+
+.certificate-card p {
+    color: #a0a0a0;
+    font-size: 15px;
+}
+
+.certificate-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: #3b3737;
+    color: #f4c047;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+
 /* Contact Section */
 .contact {
     padding: 40px 100px;
