@@ -279,6 +279,9 @@ nav ul li a:hover {
     nav ul {
         gap: 18px;
     }
+    .certificates {
+        padding: 30px 40px;
+    }
 }
 
 /* Mobile Phones (max-width: 768px) */
@@ -327,6 +330,13 @@ nav ul li a:hover {
     .contact {
         padding: 20px;
     }
+    .certificates {
+        padding: 25px 20px;
+    }
+
+    .certificate-card {
+        width: 100%;
+    }
 
     .project-container {
         grid-template-columns: 1fr;
@@ -361,6 +371,13 @@ nav ul li a:hover {
 
     nav ul li a {
         font-size: 15px;
+    }
+    .certificate-card {
+        padding: 18px;
+    }
+
+    .certificate-card p {
+        font-size: 14px;
     }
 
     .project-card {
